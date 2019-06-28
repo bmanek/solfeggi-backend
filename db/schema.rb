@@ -16,8 +16,11 @@ ActiveRecord::Schema.define(version: 2019_06_26_131035) do
   enable_extension "plpgsql"
 
   create_table "sessions", force: :cascade do |t|
+    t.integer "user_id"
     t.string "game_type"
-    t.integer "score"
+    t.integer "total_questions"
+    t.integer "number_wrong"
+    t.string "type_wrong"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
