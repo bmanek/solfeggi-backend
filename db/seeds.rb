@@ -18,3 +18,11 @@ session3 = Session.find_or_create_by(user_id: 1, game_type: "tone", total_questi
 session4 = Session.find_or_create_by(user_id: 1, game_type: "tone", total_questions: 16, number_wrong: 2, type_wrong: "C")
 session5 = Session.find_or_create_by(user_id: 1, game_type: "tone", total_questions: 9, number_wrong: 3, type_wrong: "C")
 session6 = Session.find_or_create_by(user_id: 1, game_type: "tone", total_questions: 11, number_wrong: 5, type_wrong: "C")
+
+c = Key.find_or_create_by(name: "C")
+d = Key.find_or_create_by(name: "D")
+e = Key.find_or_create_by(name: "E")
+f = Key.find_or_create_by(name: "F")
+g = Key.find_or_create_by(name: "G")
+a = Key.find_or_create_by(name: "A")
+b = Key.find_or_create_by(name: "B")
