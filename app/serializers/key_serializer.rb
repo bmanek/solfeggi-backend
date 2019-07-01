@@ -1,3 +1,3 @@
 class KeySerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name
 end
