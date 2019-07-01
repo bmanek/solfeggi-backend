@@ -13,6 +13,8 @@ class Api::V1::SessionsController < ApplicationController
     @session = Session.create(user_id: params["user_id"], game_type:
       params["game_type"], total_questions: params["total_questions"],
       number_wrong: params["number_wrong"], type_wrong: params["type_wrong"])
+
+      render json: {message: "Try harder..."}
   end
 
 end
