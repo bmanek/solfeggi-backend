@@ -31,8 +31,6 @@ ActiveRecord::Schema.define(version: 2019_07_01_205621) do
   create_table "sessions", force: :cascade do |t|
     t.integer "user_id"
     t.string "game_type"
-    t.integer "total_questions"
-    t.integer "number_wrong"
     t.string "type_wrong"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
